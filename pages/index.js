@@ -17,6 +17,7 @@ export default function Home() {
           description: doc.data().description
       });
       setArticles(articles);
+      });
     })();
   }, []);
   // データベースからのデータが入る
