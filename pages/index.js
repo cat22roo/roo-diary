@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import { db } from '../firebase'
 import { collection, getDocs } from "firebase/firestore"
+import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -17,10 +17,9 @@ export default function Home() {
           description: doc.data().description
         });
       });
-      setArticles(articles);
+      setArticles(articles)
     })();
   }, []);
-  // データベースからのデータが入る
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +29,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>roo の毎日ひとこと へようこそ</h1>  
+        <h1>
+        roo の毎日ひとこと へようこそ
+        </h1>
+
         <div className={styles.grid}>
           {articles.map((article)=> {
             return (
