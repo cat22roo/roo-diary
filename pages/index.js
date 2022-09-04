@@ -20,6 +20,7 @@ export default function Home() {
       setArticles(articles)
     })();
   }, []);
+  // データベースからのデータが入る
   return (
     <div className={styles.container}>
       <Head>
