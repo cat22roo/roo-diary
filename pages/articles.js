@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{article.title} | らべねこのひとこと日記帳</title>
+        <title>{article.title} | roo の毎日ひとこと</title>
         <meta name="description" content="{article.description}" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
